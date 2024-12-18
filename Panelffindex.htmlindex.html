@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire Best Panel - Interactive</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: white;
+        }
+        /* Header */
+        header {
+            background: #f5b921;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.5rem;
+        }
+
+        /* Scrolling Section */
+        .scroll-section {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px;
+        }
+        .scroll-section::-webkit-scrollbar {
+            height: 8px;
+        }
+        .scroll-section::-webkit-scrollbar-thumb {
+            background: #555;
+            border-radius: 5px;
+        }
+        .scroll-item {
+            min-width: 250px;
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .scroll-item:hover {
+            background: #f5b921;
+            color: black;
+        }
+
+        /* Features */
+        .features {
+            text-align: center;
+            margin: 20px;
+        }
+        .feature-box {
+            display: inline-block;
+            background: #444;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .feature-box:hover {
+            background: #f5b921;
+            color: black;
+        }
+
+        /* Price Section */
+        .price-section {
+            text-align: center;
+            margin: 20px;
+        }
+        .price-box {
+            display: inline-block;
+            background: #444;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .price-box span {
+            display: block;
+            font-size: 1.5rem;
+            color: #f5b921;
+        }
+
+        /* Form */
+        .contact-form {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+        input, textarea, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        input:focus, textarea:focus {
+            outline: 2px solid #f5b921;
+        }
+        button {
+            background: #f5b921;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        /* Contact Details */
+        footer {
+            background: #111;
+            padding: 10px;
+            text-align: center;
+            color: #aaa;
+        }
+        .contact-details {
+            font-size: 1rem;
+            margin: 5px;
+        }
+
+        /* QR Code */
+        .qr-container {
+            text-align: center;
+            margin: 20px;
+        }
+        img.qr-code {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        🔥 Free Fire Best Panel 🔥  
+        <p>Boost Your Game with Anti-Ban, OB47, and More</p>
+    </header>
+
+    <!-- Scrolling Section -->
+    <section class="scroll-section">
+        <div class="scroll-item">💡 Anti-Ban Feature</div>
+        <div class="scroll-item">📍 Location Panel</div>
+        <div class="scroll-item">⚙️ OB47 Latest Panel</div>
+        <div class="scroll-item">🎯 Aim Lock</div>
+        <div class="scroll-item">🔥 Magic Bullet 600%</div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>🔧 Key Features</h2>
+        <div class="feature-box">✅ Anti-Ban</div>
+        <div class="feature-box">📍 Location Panel</div>
+        <div class="feature-box">⚙️ OB47 Latest</div>
+        <div class="feature-box">🎯 Aim Lock</div>
+    </section>
+
+    <!-- Price Section -->
+    <section class="price-section">
+        <h2>💸 Pricing</h2>
+        <div class="price-box">
+            <span>1 Month: ₹300</span>
+        </div>
+        <div class="price-box">
+            <span>2 Months: ₹400</span>
+        </div>
+        <p>👉 Please send a screenshot of your payment to our Instagram account for confirmation.</p>
+    </section>
+
+    <!-- QR Code -->
+    <div class="qr-container">
+        <h3>📷 Scan to Pay</h3>
+        <img src="https://i.ibb.co/rmZ1prJ/Whats-App-Image-2024-12-18-at-9-12-44-PM.jpg" alt="QR Code" class="qr-code">
+    </div>
+
+    <!-- Additional Tips -->
+    <section class="tips" style="text-align: center; margin: 20px;">
+        <h3>💡 Tips for a Smooth Experience:</h3>
+        <ul>
+            <li>Use the panel on a secondary account for best results.</li>
+            <li>The panel file is 100% safe and does not violate any terms.</li>
+            <li>Send your payment screenshot to our Instagram account for confirmation and to receive the panel file.</li>
+        </ul>
+    </section>
+
+    <!-- Contact Form -->
+    <section>
+        <div class="contact-form">
+            <h2>✉️ Contact Us</h2>
+            <form action="https://formspree.io/f/xyzxyz" method="POST" onsubmit="clearForm()">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                <textarea name="query" rows="4" placeholder="Your Query" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <p id="thank-you-message" style="color: #f5b921; text-align: center; display: none;">Thank you for sharing!</p>
+        </div>
+    </section>
+
+    <!-- Contact Details -->
+    <footer>
+        <p class="contact-details">📞 Contact Number: 9818654784</p>
+        <p class="contact-details">📧 Email: <a href="mailto:ansh.sangdoa@gmail.com">ansh.sangdoa@gmail.com</a></p>
+        <p>&copy; 2024 Free Fire Best Panel. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Instagram Button -->
+    <div style="text-align: center; margin: 20px;">
+        <a href="https://www.instagram.com/anshul1232785/" target="_blank">
+            <button style="background-color: #f5b921; padding: 10px 20px; font-size: 1.2rem; border-radius: 5px; cursor: pointer;">Go to Instagram</button>
+        </a>
+    </div>
+
+    <script>
+        // Clear form and show thank you message
+        function clearForm() {
+            document.querySelector('form').reset();
+            document.getElementById('thank-you-message').style.display = 'block';
+            setTimeout(function() {
+                document.getElementById('thank-you-message').style.display = 'none';
+            }, 3000); // Hide thank you message after 3 seconds
+        }
+    </script>
+</body>
+</html>
+
